@@ -32,6 +32,10 @@ const signup = () => {
                 <div className="flex-center button-wrapper">
                     <button className="login-button" disabled>가입</button>
                 </div>
+
+                <div className="flex-center findpass_two">
+                    <a>친구들의 새로운 소식과 사진을 보려면 가입하세요</a>
+                </div>
             </div>
             <div className="flex-center findpass">
                 <a>계정이 있으신가요? 로그인</a>

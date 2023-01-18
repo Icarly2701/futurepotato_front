@@ -2,7 +2,6 @@
  .flex-center {
     display: flex;
     justify-content: center;
-    align-items: stretch;
     position:relative;
   }
   .login-container {
@@ -10,6 +9,7 @@
     width: 380px;
     height: 500px;
     border: 1px solid lightgray;
+    margin-top: 10%;
   }
   .logo-text {
     font-family: "Lobster", cursive;
@@ -49,9 +49,14 @@
     margin: 15px 40px;
   }
   .findpass {
-    margin-top: 140px;
+    margin-top: 80px;
     font-size: 13px;
     color: rgb(86, 96, 235);
+  }
+
+  .findpass_two {
+    padding-top: 20px;
+    font-size: 13px;
   }
 
   /* 네비게이션 바 */
