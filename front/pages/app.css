@@ -4,12 +4,37 @@
     justify-content: center;
     position:relative;
   }
+
+  .flex-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .login-container {
     background-color: white;
     width: 380px;
     height: 500px;
     border: 1px solid lightgray;
     margin-top: 10%;
+  }
+
+  .signup{
+    color: rgb(86, 96, 235);
+    padding-left: 15px;
+    cursor: pointer;
+  } 
+
+  .signup-container{
+    background-color: white;
+    width: 380px;
+    height: 80px;
+    border: 1px solid lightgray;
+    margin-top: 3%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
   .logo-text {
     font-family: "Lobster", cursive;
@@ -86,6 +111,7 @@
 .brand-img{
     height: 100%;
     margin-top: 5px;
+    cursor:pointer;
 }
 
 .search-box{
@@ -292,6 +318,7 @@
   font-weight: 700;
   font-size: 12px;
   padding-left: auto;
+  cursor:pointer;
 }
 
 .action-btn-wrapper{
@@ -485,6 +512,14 @@ body {
   padding: 0 2rem;
 }
 
+.container-bottom{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+  padding-top : 15px;
+  border-top: 1px solid #dadada;
+}
+
 .btn {
   display: inline-block;
   font: inherit;
@@ -511,9 +546,8 @@ body {
 
 .profile {
   padding: 4rem 0;
-  padding-left: 8rem;
-  border-bottom: 1px solid #dadada;
-  margin-bottom: 25px;
+  padding-bottom:30px;
+  padding-left: 13rem;
 }
 
 .profile::after {
@@ -600,6 +634,13 @@ body {
 .profile-stat-count,
 .profile-edit-btn {
   font-weight: 600;
+}
+
+.store-tag{
+  padding-left: 100px;
+  padding-right: 100px;
+  cursor: pointer;
+  font-size: 13px;
 }
 
 /* Gallery Section */

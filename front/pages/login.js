@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 const login = () => {
     return (
-        <div className="flex-center">
+        <div className="flex-login">
             <div className="login-container">
                 <div className="flex-center logo-wrapper">
                     <span className="logo-text">instagram</span>
@@ -22,6 +24,12 @@ const login = () => {
                 <div className="flex-center findpass">
                     <a>비밀번호를 잊으셨나요?</a>
                 </div>
+            </div>
+            <div className="signup-container">
+                <div>계정이 없으신가요?</div>
+                <Link href = "/signup" legacyBehavior>
+                    <div className="signup">가입하기</div>
+                </Link>
             </div>
         </div>
     );

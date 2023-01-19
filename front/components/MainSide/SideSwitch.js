@@ -1,3 +1,4 @@
+import Link from 'next/link';
 const SideSwitch = () => {
     return(
         <div className="profile-card">
@@ -9,7 +10,9 @@ const SideSwitch = () => {
                 <p className="sub-text">이유성</p>
             </div>
             <div className="action-btn-wrapper">
-                <button className="action-btn">전환</button>
+                <Link href = '/profile' legacyBehavior>
+                    <button className="action-btn">전환</button>
+                </Link>
             </div>
         </div>
     );

@@ -6,7 +6,7 @@ const profile = () => {
     return (
         <>
             <AppLayout />
-            <OtherProfileHead />
+            <ProfileHead />
             <ProfilePageWrapper />
         </>
     );

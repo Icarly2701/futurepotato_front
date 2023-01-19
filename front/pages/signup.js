@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const signup = () => {
     return(
     <div className="flex-center">    
@@ -38,7 +40,9 @@ const signup = () => {
                 </div>
             </div>
             <div className="flex-center findpass">
-                <a>계정이 있으신가요? 로그인</a>
+                <Link href="/login" legacyBehavior>
+                    <a>계정이 있으신가요? 로그인</a>
+                </Link>
             </div>
         </div>
     </div>

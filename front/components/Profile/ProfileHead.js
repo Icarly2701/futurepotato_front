@@ -24,6 +24,14 @@ const ProfileHead = () => {
                         <p><span className="profile-real-name">이유성</span> 컴퓨터공학과 재학중 📷✈️🏕️</p>
                     </div>
                 </div>
+                <div className="container-bottom">
+                    <div className = "store-tag">
+                        저장됨
+                    </div>
+                    <div className = "store-tag">
+                        태그됨
+                    </div>
+                </div>
             </div>
 		</header>
     );
