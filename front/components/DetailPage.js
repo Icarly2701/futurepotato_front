@@ -11,12 +11,14 @@ const DetailPage = () => {
                         </div>
                     <div className="right-col-detail">
                         <UserInfo />
-                            <div style={{borderBottom:"1px solid lightgray;"}}>
+                        <div className="comment-post">
+                            <div style={{borderBottom:"1px solid lightgray;"}} className="post-story">
                                 <p className="description"><span>username </span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tenetur veritatis placeat, molestiae impedit aut provident eum quo natus molestias?</p>
                                 <p className="post-time">2 minutes ago</p>
                             </div>
-                        <CommentList />
-                        <CommentForm />
+                            <CommentList />
+                            <CommentForm />
+                        </div>
                     </div>
                 </div>
         </div>
