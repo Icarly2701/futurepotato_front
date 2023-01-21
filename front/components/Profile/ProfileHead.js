@@ -26,10 +26,10 @@ const ProfileHead = () => {
                 </div>
                 <div className="container-bottom">
                     <div className = "store-tag">
-                        저장됨
+                        <img src="./post.png" style={{width:15, height:15, marginRight:10, marginTop: 10}} />저장됨
                     </div>
                     <div className = "store-tag">
-                        태그됨
+                        <img src="./tag.png" style={{width:15, height:15, marginRight:10, marginTop: 10}}/>태그됨
                     </div>
                 </div>
             </div>
