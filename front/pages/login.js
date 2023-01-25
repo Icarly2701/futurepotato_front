@@ -1,6 +1,11 @@
 import Link from "next/link";
+import { useCallback, useState } from "react";
+import useInput from "../hooks/useInput";
 
 const login = () => {
+    const [id, onChangeId] = useInput('');
+    const [password, onChangePassword] = useInput('');
+    
     return (
         <div className="flex-login">
             <div className="login-container">
@@ -12,10 +17,17 @@ const login = () => {
                         <input
                             className="login-input"
                             type="text"
+                            value={id}
+                            onChange = {onChangeId}
                             placeholder="전화번호, 사용자 이름 또는 이메일"/>
                     </div>
                     <div className="login-wrapper flex-center">
-                        <input className="login-input" type="password" placeholder="비밀번호" />
+                        <input 
+                            className="login-input" 
+                            type="password" 
+                            value={password}
+                            onChange={onChangePassword}
+                            placeholder="비밀번호" />
                     </div>
                     <div className="flex-center button-wrapper">
                         <button className="login-button" disabled>로그인</button>

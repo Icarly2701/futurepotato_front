@@ -1,6 +1,11 @@
 import Link from "next/link";
+import useInput from "../hooks/useInput";
 
 const signup = () => {
+    const [id, onChangeId] = useInput('');
+    const [nickname , onChangeNickname] = useInput('');
+    const [realname, onChangeRealname] = useInput('');
+    const [password, onChangePassword] = useInput('');
     return(
     <div className="flex-center">    
         <div className="login-container">
@@ -12,6 +17,8 @@ const signup = () => {
                     <input
                         className="login-input"
                         type="text"
+                        value={id}
+                        onChange={onChangeId}
                         placeholder="휴대폰 번호 또는 이메일 주소"/>
                 </div>
                 <div className='login-wrapper flex-center'>
@@ -19,6 +26,8 @@ const signup = () => {
                         className="login-input"
                         type='text'
                         placeholder='성명'
+                        value={realname}
+                        onChange={onChangeRealname}
                     />
                 </div>
                 <div className='login-wrapper flex-center'>
@@ -26,10 +35,18 @@ const signup = () => {
                         className="login-input"
                         type='text'
                         placeholder='사용자 이름'
+                        value={nickname}
+                        onChange={onChangeNickname}
                     />
                 </div>
                 <div className="login-wrapper flex-center">
-                    <input className="login-input" type="password" placeholder="비밀번호" />
+                    <input 
+                        className="login-input" 
+                        type="password" 
+                        placeholder="비밀번호"
+                        value={password}
+                        onChange = {onChangePassword} 
+                    />
                 </div>
                 <div className="flex-center button-wrapper">
                     <button className="login-button" disabled>가입</button>

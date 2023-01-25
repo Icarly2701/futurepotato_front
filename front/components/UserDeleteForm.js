@@ -19,7 +19,6 @@ const UserDeleteForm = () => {
             <div className ='modal_title_option_user_two'>
                     <div> 취소 </div>
             </div>
-        <div className='model_image_upload'></div>
     </div>
     );
 };

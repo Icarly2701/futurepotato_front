@@ -1,9 +1,11 @@
 import "./app.css";
 
+import wrapper from "../store/configureStore";
+
 const App = ({Component}) => {
     return (
         <Component />
     )
 }
 
-export default App;
+export default wrapper.withRedux(App);

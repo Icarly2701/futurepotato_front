@@ -8,7 +8,7 @@ const MainPagePosts = () => {
     return(
         <div className="post">
             <UserInfo />
-            <img src="/cover 1.png" class="post-image" alt="" />   
+            <img src="/cover 1.png" className="post-image" alt="" />   
             <div className="post-content">
                 <ReactionWrapper />
                 <p className="likes">1,012 likes</p>

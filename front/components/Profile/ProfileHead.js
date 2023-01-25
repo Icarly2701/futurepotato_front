@@ -1,4 +1,11 @@
+import Modal from 'react-modal';
+import { useState } from 'react';
+import FolloingModal from '../FolloingModal';
+import FollowForm from '../FollowForm';
 const ProfileHead = () => {
+    const [followOpen, setFollowOpen] = useState(false);
+
+
     return (
         <header>
             <div className="container">
@@ -16,9 +23,12 @@ const ProfileHead = () => {
                         <ul className='profile-stats-ul'>
 					        <li>게시글 <span className="profile-stat-count">164</span></li>
 					        <li>팔로워 <span className="profile-stat-count">188</span></li>
-					        <li>팔로잉 <span className="profile-stat-count">206</span></li>
+					        <li>팔로잉 <span className="profile-stat-count" onClick={() => setFollowOpen(true)}>206</span></li>
 				        </ul>
                     </div>
+                    <Modal isOpen = {followOpen} onRequestClose={() => setFollowOpen(false)} style = {{content:{top:110, left:150, bottom:130,right:150}}}>
+                        <FolloingModal />
+                    </Modal>
 
 			        <div className="profile-bio">
                         <p><span className="profile-real-name">이유성</span> 컴퓨터공학과 재학중 📷✈️🏕️</p>
